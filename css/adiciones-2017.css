@@ -1,0 +1,323 @@
+/*------------------------Fuente Lato Regular, Lato italic, Lato semibold */
+@font-face {
+    font-family:'lato-regular';
+    src: url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Regular.eot');
+    src: url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Regular.woff') format('woff'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Regular.ttf') format('truetype'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'lato-italic';
+    src: url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Italic.eot');
+    src: url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Italic.woff') format('woff'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Italic.ttf') format('truetype'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'lato-semi';
+    src: url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Semibold.eot');
+    src: url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Semibold.woff') format('woff'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Semibold.ttf') format('truetype'),
+         url('http://www2.udea.edu.co/webmaster/maquetacion/fonts/Lato-Semibold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------------Normalize de estilos para nuevas adiciones */
+.adicion2017,
+.adicion2017 *{
+  margin: 0px;
+  padding: 0px;
+  line-height:1em;
+  font-size: 10px;
+  border-collapse:collapse;
+  font-family: lato-regular, Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box; 
+}
+.adicion2017 a img {
+  border: none; 
+}
+.adicion2017 h1,
+.adicion2017 h2,
+.adicion2017 h3,
+.adicion2017 h4,
+.adicion2017 h5,
+.adicion2017 h6,
+.adicion2017 p,
+.adicion2017 ul,
+.adicion2017 li,
+.adicion2017 form,
+.adicion2017 textarea,
+.adicion2017 input,
+.adicion2017 label,
+.adicion2017 legend,
+.adicion2017 fieldset,
+.adicion2017 select,
+.adicion2017 seccionquote{
+  font-weight: normal;
+  float: left;
+  width: 100%;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+  text-align: left;       
+}
+.adicion2017 input{
+	border: 0px inset;
+}
+.adicion2017{
+	float: left;
+	width: 100%;
+}
+.adicion2017 ul{
+  list-style-type:none;
+}
+
+/*------------------------ELEMENTO NUEVO: Encabezado de seccion */
+.adicion2017_barra,
+.adicion2017_barra h2,
+.adicion2017_barra img{
+	float:left;
+}
+.adicion2017_barra{
+	width: 100%;
+	height: 45px;
+	background-color: #7DB006;
+}
+.adicion2017_barra h2{
+	width: 83.5%;
+	color: #fff;
+	font-size: 25px;
+    font-family: lato-italic, Arial, Helvetica, sans-serif;
+    padding:9px 0px 0px 10px;
+	margin-bottom: 0px;
+	line-height: 1em;
+}
+.adicion2017_barra img {
+	width: 16.5%;
+}
+@media screen and (max-width: 939px){
+.adicion2017_desk{
+	display:none;
+}
+.adicion2017_barra h2{
+	font-size: 23px;
+    padding:10px 0px 0px 10px;
+}	
+}
+
+
+/*------------------------ELEMENTO NUEVO: Mega menu de seccion */
+.adicion2017_menu{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.adicion2017_menu ul li{
+	float: left;
+	width: 16.66%;
+	position: relative;
+}
+.adicion2017_menu ul li .vinculo{
+	float: left;
+	width: 100%;
+	background-color: #eee;
+	min-height: 145px;
+	padding: 13px 13px;
+	border-bottom: solid 7px #6C9A06;
+}
+.adicion2017_menu ul li div.vinculo{
+	background-image: url('../Images/flecha_baja.png');
+	background-position: bottom 10px right 10px;
+	background-repeat: no-repeat;
+}
+.adicion2017_menu ul li div.vinculo.activo{
+	background-image: url('../Images/flecha_sube.png');
+}
+.adicion2017_menu ul li .vinculo:hover,
+.adicion2017_menu ul li .vinculo.alt:hover{
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.1);
+}
+.adicion2017_menu ul li .vinculo.alt {
+	background-color: #ddd;
+	border-bottom: solid 7px #14612C;
+}
+.adicion2017_menu ul li .vinculo h3{
+	font-size: 45px;
+  	font-family: lato-semi, Arial, Helvetica, sans-serif;
+  	margin-top:0px;
+}
+.adicion2017_menu ul li .vinculo h3 span{
+	font-size: 1em;
+	float: left;
+	width: auto;
+	margin: 0 -1px;
+  	font-family: lato-semi, Arial, Helvetica, sans-serif;
+}
+.adicion2017_menu ul li .vinculo h3 span:nth-child(1){
+	color: #aaa;
+}
+.adicion2017_menu ul li .vinculo h3 span:nth-child(2){
+	color: #bbb;
+}
+.adicion2017_menu ul li .vinculo h3 span:nth-child(3){
+	color: #ccc;
+}
+.adicion2017_menu ul li .vinculo p{
+	font-size: 16px;
+	line-height: 18px;
+	margin: 5px 0 0 0;
+	color: #0A3319;
+}
+.adicion2017_menu ul li ul{
+	width: 100%;
+	display: none;
+	padding: 0 0px 10px 1px;
+	position: absolute;
+	z-index: 99;
+	left: 0px;
+	top: 145px;
+	background-image: url('../Images/menu_shade.png');
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	padding: 0 0 11px 0;
+}
+.adicion2017_menu ul li ul li{
+	width: 100%;
+	padding: 0 10px;
+	background-color: #6C9A06;
+}
+.adicion2017_menu ul li ul li:last-child{
+	border-bottom: solid 0px rgba(255,255,255,0.5);
+}
+.adicion2017_menu ul li ul.alt li{
+	background-color: #14612C;
+}
+.adicion2017_menu ul li ul.alt li{
+	width: 100%;
+}
+.adicion2017_menu ul li ul li a{
+	float: left;
+	color: #fff !important;
+	width: 100%;
+	font-size: 16px;
+	border-bottom: solid 1px rgba(255,255,255,0.5);
+	padding: 10px 0px;
+	text-decoration: none;
+}
+.adicion2017_menu ul li ul li:last-child{
+	padding-bottom: 10px;
+}
+.adicion2017_menu ul li ul li:last-child a{
+	border-bottom: solid 0px rgba(255,255,255,0.5);
+}
+.adicion2017_menu ul li ul li a:hover{
+	color: rgba(255,255,255,0.7) !important;
+	text-decoration: none;
+}
+.adicion2017_rspnsv{
+	margin: 20px 0 0px 0;
+	position: relative;
+}
+@media screen and (min-width: 940px){
+.adicion2017_rspnsv{
+	display:none;
+}
+}
+@media screen and (max-width: 939px){
+#icono_menu_rspnsv {
+	width: 40px;
+	height: 40px;
+	float: none;
+	color: rgba(255,255,255,1);
+	text-indent: -9999px;
+	font-size: 18px;
+	position: absolute;
+	top: 3px;
+	right: 6px;
+	background-image: url('../Images/menu_close.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	margin: 0px 0px 0 0
+}
+#icono_menu_rspnsv.activo{
+	background-image: url('../Images/menu_open.png');
+}
+.adicion2017_menu ul li{
+	float: left;
+	width: 100% !important;
+	padding: 0 0px !important;
+	position: relative;
+}
+.adicion2017_menu ul li a{
+	padding: 10px 10px !important;
+}
+.adicion2017_menu ul li .vinculo h3{
+	width: auto !important;
+	min-width: 65px;
+	font-size: 30px;
+	float: left;
+	margin: 0 7px 0px 0;
+}
+.adicion2017_menu ul li .vinculo p{
+	width: auto;
+}
+.adicion2017_menu ul li .vinculo p br{
+	display:none;
+}
+.adicion2017_menu ul li .vinculo{
+	min-height: auto;
+	border-bottom: solid 0px #6C9A06;
+	padding: 9px 10px;
+}
+.adicion2017_menu ul li .vinculo.alt {
+	border-bottom: solid 0px #14612C;
+}
+.adicion2017_menu ul li ul{
+	width: 100%;
+	height: auto;
+	display: none;
+	padding: 0 0px 10px 0px;
+	position: relative;
+	z-index: 2;
+	top: 0px;
+}
+.adicion2017_menu ul ul{
+	background-image: none;
+	background-color: #6C9A06 !important;
+	padding: 0 0 0px 0 !important;
+}
+.adicion2017_menu ul li ul li:last-child{
+	padding-bottom: 0px;
+}
+.adicion2017_menu{
+	margin: 0px 0 20px 0 !important;
+}
+.adicion2017 ul.menu{
+	display: none;
+	margin: 0px 0 0px 0 !important;
+}
+.adicion2017_menu ul li div.vinculo{
+	background-image: url('../Images/flecha_baja.png');
+	background-position: center right 15px;
+	background-repeat: no-repeat;
+}
+.adicion2017_menu ul li ul li{
+	background-color: #6C9A06 !important;
+}
+.adicion2017_menu ul li ul li.alt{
+	background-color: #4F7F0F !important;
+}
+}
